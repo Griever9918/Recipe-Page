@@ -1,0 +1,190 @@
+@font-face {
+    font-family: youngserif;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: outfit;
+    
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: outfit;
+    background-color: hsl(330, 55%, 91%) ;
+}
+
+.container {
+    margin: 5% 25% 5% 25%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+ul, ol {
+    padding: 0 1.5rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+h1, h2 {
+    font-family: youngserif, sans-serif;
+}
+
+h2 {
+    color:hsl(14, 45%, 36%);
+    font-size: 2rem;
+    font-weight: 550;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.header p {
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.prepare {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: hsl(330, 55%, 91%);
+    border-radius: 1rem
+}
+
+.prepare h2 {
+    color: hsl(331, 47%, 36%);
+    font-size: 1.2rem;
+    padding-bottom: 0.7rem;
+    margin-left: 1rem;
+}
+
+.prepare ul {
+    margin-left: 1rem;
+}
+
+.prepare li::marker{
+    color: hsl(331, 47%, 36%);
+    font-size: 0.9rem;
+}
+
+.prepare ul li {
+    padding-left: 1rem;
+    margin-bottom: 0.7rem;
+    line-height: 1.5;
+}
+
+.ingredient {
+    margin-bottom: 1.5rem;
+}
+
+.ingredient h2 {
+    padding-bottom: 0.7rem;
+}
+
+.ingredient li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredient li{
+    padding-left: 1rem;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+hr {
+    border: 1px solid rgb(227, 223, 223);
+    margin-bottom: 1.5rem;
+}
+
+.instructions {
+    margin-bottom: 1.5rem;
+}
+
+.instructions h2{
+    margin-bottom: 1.5rem;
+}
+
+.instructions li::marker{
+    color:hsl(14, 45%, 36%);
+    font-weight: bolder;
+}
+
+.instructions li {
+    padding-left: 1rem;
+    line-height: 1.5;
+    padding-bottom: 0.5rem;
+}
+
+.nutritions h2 {
+    margin-bottom: 1.5rem;
+}
+
+.nutritions p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%
+}
+
+tr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid rgb(227, 223, 223);
+}
+
+tr td {
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+tr td:last-child {
+    color:hsl(14, 45%, 36%);
+    font-weight: bolder;
+}
+
+@media (max-width: 500px) {
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        border-radius: 0;
+    }
+
+    .prepare {
+        border-radius: 0;
+    }
+}
